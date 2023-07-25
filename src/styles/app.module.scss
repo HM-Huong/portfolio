@@ -1,0 +1,8 @@
+@import '/src/styles/constants.scss';
+
+.container {
+	overflow-x: clip;
+	color: $primary;
+	position: relative;
+	min-height: 200vh;
+}
