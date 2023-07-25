@@ -1,0 +1,83 @@
+@import '/src/styles/constants.scss';
+
+.wrapper {
+	overflow: hidden;
+
+	.container {
+		position: relative;
+		z-index: 1;
+
+		.upperElements {
+			@media (max-width: $sm) {
+				justify-content: center;
+				text-align: center;
+				gap: 2rem;
+			}
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.person {
+			position: absolute;
+			@media (max-width: $sm) {
+				position: relative;
+			}
+			width: 100%;
+			bottom: -2.3rem;
+			background-image: url('/splash.png');
+			background-size: 23rem;
+			background-repeat: no-repeat;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.lowerElements {
+			margin-top: 12rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			@media (max-width: $sm), (max-width: $md) {
+				margin-top: 4rem;
+				gap: 2rem;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			.experience {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				:nth-child(2) {
+					line-height: 25px;
+				}
+			}
+
+			.certificate {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				img {
+					margin-bottom: 1rem;
+					width: 3.5rem;
+				}
+			}
+		}
+
+		.email {
+			@media (max-width: $sm) {
+				position: relative;
+				display: none;
+			}
+			position: absolute;
+			top: 50%;
+			left: 0;
+			color: orange;
+		}
+	}
+}

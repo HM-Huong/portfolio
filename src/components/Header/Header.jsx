@@ -19,7 +19,7 @@ export default function Header() {
 			// once chỉ có hiệu ứng khi load lần đầu
 			// amount: 0.25 hiệu ứng sẽ bắt đầu khi motion.div xuất hiện trong viewport > 25%
 			viewport={{once: false, amount: 0.25}} 
-			className={clsx(css.wrapper, 'paddings')}
+			className={clsx(css.wrapper, 'paddings bg-primary')}
 			style={{boxShadow: headerShadow}}
 		>
 			<div className={clsx(css.container, 'flexCenter innerWidth')}>
