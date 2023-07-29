@@ -34,6 +34,9 @@
 				align-items: flex-start;
 				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
 				transition: all 300ms ease;
+				&.menuNotOpened {
+					right: -120%;
+				}
 			}
 
 			text-transform: uppercase;
@@ -64,10 +67,11 @@
 				}
 			}
 		}
-		
+
 		.menuIcon {
 			@media (max-width: $sm), (max-width: $md) {
 				display: block;
+				cursor: pointer;
 			}
 			display: none;
 		}

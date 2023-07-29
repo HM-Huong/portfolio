@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { motion } from 'framer-motion';
 
 import css from './Header.module.scss';
-import { getMenuStyles, headerVariants } from '../../utils/motion';
+import { headerVariants } from '../../utils/motion';
 import useHeaderShadow from '../../hooks/useHeaderShadow';
 
 export default function Header() {
@@ -28,7 +28,7 @@ export default function Header() {
 			variants={headerVariants}
 			// once chỉ có hiệu ứng khi load lần đầu
 			// amount: 0.25 hiệu ứng sẽ bắt đầu khi motion.div xuất hiện trong viewport > 25%
-			viewport={{ once: false, amount: 0.25 }}
+			viewport={{ once: true, amount: 0.25 }}
 			className={clsx(css.wrapper, 'paddings bg-primary')}
 			style={{ boxShadow: headerShadow }}
 		>
@@ -36,8 +36,9 @@ export default function Header() {
 				<div className={clsx(css.name)}>Binjan</div>
 
 				<ul
-					className={clsx(css.menu, 'flexCenter')}
-					style={getMenuStyles(menuOpened)}
+					className={clsx(css.menu, 'flexCenter', {
+						[css.menuNotOpened]: !menuOpened,
+					})}
 				>
 					<li>
 						<a href="">SERVICES</a>
