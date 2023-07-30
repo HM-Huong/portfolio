@@ -15,6 +15,7 @@ export default function Expertise() {
 			viewport={{ once: true, amount: 0.25 }}
 			className={clsx(css.wrapper)}
 		>
+			<a id="expertise" className={clsx('anchor')}></a>
 			<div
 				className={clsx(
 					css.container,

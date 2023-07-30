@@ -11,7 +11,7 @@ import {
 } from '../../utils/motion';
 import { workExp } from '../../utils/data';
 
-export default function Works() {
+export default function Work() {
 	return (
 		<motion.section
 			variants={staggerChildren}
@@ -20,6 +20,7 @@ export default function Works() {
 			viewport={{ once: true, amount: 0.25 }}
 			className={clsx(css.wrapper, 'paddings')}
 		>
+			<a id="work" className={clsx('anchor')}></a>
 			<div className={clsx(css.container, 'flexCenter innerWidth')}>
 				<h2 className={clsx('primaryText yPaddings')}>My Work Experience</h2>
 				<div className={clsx(css.experiences, 'flexCenter')}>

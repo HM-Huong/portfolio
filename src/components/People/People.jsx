@@ -16,6 +16,7 @@ export default function People() {
 			viewport={{ once: true, amount: 0.25 }}
 			className={clsx(css.wrapper, 'paddings ')}
 		>
+			<a id="people" className={clsx('anchor')}></a>
 			<motion.div
 				variants={footerVariants}
 				className={clsx(css.container, 'yPaddings innerWidth')}

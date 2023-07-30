@@ -14,6 +14,7 @@ export default function Portfolio() {
 			viewport={{ once: true, amount: 0.25 }}
 			className={clsx(css.wrapper, 'paddings')}
 		>
+			<a id="portfolio" className={clsx('anchor')}></a>
 			<div className={clsx(css.container, 'innerWidth flexCenter')}>
 				{/* Heading */}
 				<div className={clsx(css.heading, 'flexCenter')}>
@@ -29,7 +30,7 @@ export default function Portfolio() {
 				</div>
 
 				{/* Show case */}
-				<div className={clsx(css.showCase, "flexCenter")}>
+				<div className={clsx(css.showCase, 'flexCenter')}>
 					<motion.img
 						variants={fadeIn('up', 'tween', 0.5, 0.6)}
 						src="/showCase1.png"

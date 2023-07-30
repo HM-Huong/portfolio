@@ -41,16 +41,16 @@ export default function Header() {
 					})}
 				>
 					<li>
-						<a href="">SERVICES</a>
+						<a href="#expertise">SERVICES</a>
 					</li>
 					<li>
-						<a href="">Experience</a>
+						<a href="#work">Experience</a>
 					</li>
 					<li>
-						<a href="">Portfolio</a>
+						<a href="#portfolio">Portfolio</a>
 					</li>
 					<li>
-						<a href="">Testimonials</a>
+						<a href="#people">Testimonials</a>
 					</li>
 					<li className={clsx(css.phone, 'flexCenter')}>
 						<p>+84 787 238 967</p>
