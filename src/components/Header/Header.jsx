@@ -53,7 +53,7 @@ export default function Header() {
 						<a href="">Testimonials</a>
 					</li>
 					<li className={clsx(css.phone, 'flexCenter')}>
-						<p>+001 (313) 345 678</p>
+						<p>+84 787 238 967</p>
 						<BiPhoneCall size={'40px'} />
 					</li>
 				</ul>

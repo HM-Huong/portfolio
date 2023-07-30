@@ -5,6 +5,7 @@ import css from './styles/app.module.scss';
 import Hero from './components/Hero/Hero';
 import Expertise from './components/Expertise/Expertise';
 import Work from './components/Work/Work';
+import Portfolio from './components/Portfolio/Portfolio';
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 			<Hero />
 			<Expertise/>
 			<Work />
+			<Portfolio />
 		</div>
 	);
 };

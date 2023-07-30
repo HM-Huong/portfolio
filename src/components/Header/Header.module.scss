@@ -65,6 +65,9 @@
 					box-shadow: 0 4px 4px #0000000d;
 					padding: 10px;
 				}
+				p {
+					vertical-align: middle;
+				}
 			}
 		}
 
@@ -74,6 +77,7 @@
 				cursor: pointer;
 			}
 			display: none;
+			user-select: none;
 		}
 	}
 }
