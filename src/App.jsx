@@ -7,16 +7,18 @@ import Expertise from './components/Expertise/Expertise';
 import Work from './components/Work/Work';
 import Portfolio from './components/Portfolio/Portfolio';
 import People from './components/People/People';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
 	return (
 		<div className={clsx(css.container, 'bg-primary')}>
 			<Header />
 			<Hero />
-			<Expertise/>
+			<Expertise />
 			<Work />
 			<Portfolio />
 			<People />
+			<Footer />
 		</div>
 	);
 };

@@ -5,4 +5,8 @@
 	color: $primary;
 	position: relative;
 	// min-height: 200vh;
+
+	&:nth-child(odd):not(:first-child) {
+		background-color: #fff;
+	}
 }

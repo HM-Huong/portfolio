@@ -21,7 +21,7 @@ export default function Hero() {
 						variants={fadeIn('right', 'tween', 0.2, 1)}
 						className="primaryText"
 					>
-						Hey There, <br /> I'm Binjan.
+						Hey There, <br /> I'm Huong.
 					</motion.span>
 					<motion.span
 						variants={fadeIn('left', 'tween', 0.4, 1)}

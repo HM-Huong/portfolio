@@ -33,7 +33,7 @@ export default function Header() {
 			style={{ boxShadow: headerShadow }}
 		>
 			<div className={clsx(css.container, 'flexCenter innerWidth')}>
-				<div className={clsx(css.name)}>Binjan</div>
+				<div className={clsx(css.name)}>HMHuong</div>
 
 				<ul
 					className={clsx(css.menu, 'flexCenter', {
